@@ -1,0 +1,227 @@
+.homepage-welcome{
+    background-image: url("../images/Pampangajf3325a_04.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    padding-top: 80px;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.912), rgba(38, 44, 55, 0.719));
+    opacity: 0.97;
+}
+
+.homepage-container {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.image-container > img {
+    width: 100px;
+    height: 100px;
+}
+.page-header,
+.page-subheader {
+
+    color: #FFFFFF;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.page-header {
+    width: 700px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 25px 0px;
+}
+
+.page-header > span {
+    color: #0d47a1;
+}
+
+.page-subheader {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.about-us-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #0d47a1;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #0d48a1cf;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shaadow 0.15s ease;
+}
+
+.about-us-btn:hover {
+    background-color: white;
+    color: #0d47a1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background: #0d1b2a;
+    padding: 30px 0;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.tools-title {
+
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s ease-in-out;
+}
+
+.tools-title:hover {
+    letter-spacing: 2px; 
+}
+
+.tools-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fefefe;
+    transition: width 0.3s ease-in-out;
+}
+
+.tools-title:hover::after {
+    width: 100%;
+}
+
+.loop-wrapper {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.loop-wrapper::before,
+.loop-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.loop-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(13, 27, 42, 1), rgba(13, 27, 42, 0));
+}
+
+.loop-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(13, 27, 42, 1), rgba(13, 27, 42, 0));
+}
+
+.loop {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: max-content;
+    align-items: center;
+    height: 200px;
+}
+
+.loop > .video-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.thumbnail-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.thumbnail-container > a > img {
+    object-fit: cover;
+    object-position: center;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(238, 204, 253, 0.927);
+    background-color: rgb(58, 11, 73);
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail-container > a:hover > img {
+    transform: scale(1.05);
+}
+
+.video-info {
+    width: 400px;
+}
+.video-info .video-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.video-info > .video-title > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+} 
+
+.video-info .video-title:hover > a {
+    color: #5c8ed0;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+

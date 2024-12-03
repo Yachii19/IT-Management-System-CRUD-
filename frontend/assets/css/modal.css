@@ -1,0 +1,407 @@
+/* Modal Form */
+.screen-blocker {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color : rgba(0, 0, 0, 0.50);
+    backdrop-filter  : blur(5px);
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    z-index: 1000;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.855);
+    padding: 15px 30px 30px 30px;
+    position: relative;
+    animation: popup-animation 0.5s ease-out;
+}
+
+/* This will make it so that whenever the modal is open it will prevent scrolling thorugh Javascript code */
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-title {
+    font-size: 30px;
+    color: #002366;
+    margin-bottom: 5px;
+}
+
+.top-close-btn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.modal-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#officer_form {
+    gap: 20px;
+}
+
+.form-container > div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Used their class name instead of just using div to improve readability */
+.first-row > div,
+.second-row > div,
+.third-row > div,
+.fourth-row > div {
+    width: 100%;
+    position: relative;
+}
+
+.first-row > div > label,
+.second-row > div > label,
+.third-row > div > label,
+.fourth-row > div > label {
+    color: #212121;
+    position: absolute;
+    top: -8px;
+    left: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0px 6px;
+    background-color: #FFFFFF;
+}
+
+.first-row > div > input,
+.second-row > div > input,
+.third-row > div > select {
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(172, 172, 172);
+    width: 300px;
+    transition: border 0.15s ease;
+}
+
+/* For officer */
+.fourth-row > div > input {
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(172, 172, 172);
+    width: 100%;
+    transition: border 0.15s ease;
+}
+
+.first-row > div > input:focus,
+.first-row > div > input:hover,
+.second-row > div > input:focus,
+.second-row > div > input:hover,
+.third-row > div > select:focus,
+.third-row > div > select:hover,
+.fourth-row > div > input:focus,
+.fourth-row > div > input:hover {
+    border: 1px solid #0056D2;
+    box-shadow: 0 0 3px rgba(0, 86, 210, 0.5);
+    outline: none;
+}
+
+.first-row > div > input:focus + label,
+.second-row > div > input:focus + label,
+.third-row > div > select:focus + label,
+.fourth-row > DIV > input:focus + label {
+    color: #002366;
+}
+
+.birthday-container input,
+.select-container select {
+    cursor: pointer;
+}
+
+/* For Officer Custom File Upload */
+.fifth-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.fifth-row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0056D2;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 10px 0px 20px 0px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.fifth-row > div:hover {
+    background-color: #002366;
+    opacity: 0.8;
+}
+
+.fifth-row > div > img {
+    width: 20px;
+    height: 20px;
+}
+
+.file-hide {
+    display: none;
+}
+
+/* For Faculty */
+.faculty-third-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.faculty-third-row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0056D2;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 20px 0px 20px 0px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.faculty-third-row > div:hover {
+    background-color: #002366;
+    opacity: 0.8;
+}
+
+.faculty-third-row > div > img {
+    width: 20px;
+    height: 20px;
+}
+
+.file-hide {
+    display: none;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#officer_button_container {
+    margin-top: 0px;
+}
+
+#faculty_button_container {
+    margin-top: 0px;
+}
+
+
+.submit-form,
+.close-btn {
+    text-align: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.submit-form {
+    background-color: #0056D2;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.close-btn {
+    background-color: #666666;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.submit-form:hover {
+    background-color: #002366;
+    opacity: 0.8;
+}
+
+.close-btn:hover {
+    background-color:  #262626;
+    opacity: 0.8;
+}
+
+
+/* Pop Up */
+.screen-blocker2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color : rgba(0, 0, 0, 0.50);
+    backdrop-filter  : blur(5px);
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    z-index: 1000;
+}
+
+.screen-blocker22 {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color : rgba(0, 0, 0, 0.50);
+    backdrop-filter  : blur(5px);
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    z-index: 1000;
+}
+
+.popup {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.855);
+    padding: 50px 40px 30px 40px;
+    animation: popup-animation 0.5s ease-out;
+    position: relative;
+}
+
+.popup > .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    right: 33%;
+    left: 33%;
+}
+
+.icon-container img {
+    width: 70px;
+    height: 70px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.popup-header {
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 700;
+    color: #002366;
+}
+
+.popup-content {
+    font-size: 16px;
+    color: #666666;
+}
+
+.popup-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    background-color: #2f94ff;
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.popup-btn:hover {
+    background-color: #002366;
+    opacity: 0.8;
+}
+
+/* Delete Popup */
+.screen-blocker3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color : rgba(0, 0, 0, 0.50);
+    backdrop-filter  : blur(5px);
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    z-index: 1000;
+}
+
+.delete-popup {
+    width: 600px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.855);
+    padding: 30px 40px;
+    animation: popup-animation 0.5s ease-out;
+}
+
+.delete-popup-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.delete-popup-btn > :nth-child(1) {
+    background-color: #002366;
+}
+
+.delete-popup-btn > :nth-child(2) {
+    background-color: #666666;
+}
+
+
+/* Show the blocker when add-button is clicked */
+.show-blocker {
+    display: flex;
+}
+
+/* Show blocker when popups appear */
+.show-popup {
+    display: flex;
+}
+
+/* Animation for the modal and popups */
+@keyframes popup-animation {
+    0% {
+        transform: scale(0.5); /* Start smaller */
+        opacity: 0;           /* Fully transparent */
+    }
+    60% {
+        transform: scale(1.1); /* Slightly larger for a "bounce" effect */
+        opacity: 1;            /* Fully visible */
+    }
+    100% {
+        transform: scale(1);   /* Set to normal size */
+    }
+}

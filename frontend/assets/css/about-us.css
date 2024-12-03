@@ -1,0 +1,40 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 200px;
+    min-height: 80dvh;
+    padding: 150px 100px 0 100px;
+    row-gap: 100px;
+}
+
+.main-content > div > div >  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #002366;
+}
+
+.main-content > :nth-child(1),
+.main-content > :last-child {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 200px;
+    align-items: center;
+}
+
+.main-content > :nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    gap: 200px;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container > img {
+    width: 300px;
+}

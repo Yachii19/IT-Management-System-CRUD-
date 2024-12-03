@@ -1,0 +1,62 @@
+INSERT INTO students (firstName, lastName, email, year, section, birthday) VALUES
+('John Rein', 'Vinuya', 'johnrein.vinuya@example.com', '3', 'A', '2004-11-19'),
+('Aldyne', 'Ronquillo', 'aldyne.ronquilloexample.com', '3', 'A', '2005-09-14'),
+('Al Vincent', 'Feliciano', 'alvincent.feliciano@example.com', '3', 'A', '2003-11-09'),
+('Carl', 'Mallari', 'carl.mallari@example.com', '3', 'A', '2003-03-01'),
+('Michael', 'Brown', 'michael.brown@example.com', '1', 'B', '2005-03-08'),
+('Sarah', 'Williams', 'sarah.williams@example.com', '2', 'C', '2004-09-10'),
+('David', 'Miller', 'david.miller@example.com', '3', 'D', '2003-12-01'),
+('Sophia', 'Wilson', 'sophia.wilson@example.com', '4', 'A', '2002-04-22'),
+('James', 'Taylor', 'james.taylor@example.com', '1', 'C', '2005-08-19'),
+('Olivia', 'Anderson', 'olivia.anderson@example.com', '2', 'D', '2004-02-25'),
+('Benjamin', 'Thomas', 'benjamin.thomas@example.com', '3', 'A', '2003-06-14'),
+('Isabella', 'Jackson', 'isabella.jackson@example.com', '4', 'B', '2002-10-05'),
+('Matthew', 'White', 'matthew.white@example.com', '1', 'D', '2005-09-29'),
+('Ella', 'Harris', 'ella.harris@example.com', '2', 'A', '2004-03-12'),
+('Ethan', 'Martin', 'ethan.martin@example.com', '3', 'B', '2003-11-18'),
+('Mia', 'Thompson', 'mia.thompson@example.com', '4', 'C', '2002-07-27'),
+('Liam', 'Garcia', 'liam.garcia@example.com', '1', 'A', '2005-10-31'),
+('Ava', 'Martinez', 'ava.martinez@example.com', '2', 'B', '2004-08-16'),
+('Noah', 'Robinson', 'noah.robinson@example.com', '3', 'C', '2003-05-24'),
+('Chloe', 'Clark', 'chloe.clark@example.com', '4', 'D', '2002-12-09');
+
+
+INSERT INTO officers (firstName, lastName, email, year, section, birthday, role, imageName) VALUES
+('Ernz', 'Manalo', 'ernz.manalo@example.com', '3', 'A', '2004-05-12', 'President', 'manalo.jpg'),
+('Kiana', 'Reyes', 'kiana.reyes@example.com', '4', 'A', '2002-03-21', 'Executive Assistant to the President', 'reyes.jpg'),
+('Aian', 'Garcia', 'aian.garcia@example.com', '2', 'A', '2005-01-02', 'Vice President for Internal Affairs', 'garcia.jpg'),
+('Aldyne', 'Ronquillo', 'adlyne.ronquillo@example.com', '3', 'A', '2003-11-22', 'Vice President for External Affairs', 'ronquillo.jpg'),
+('Charlene', 'Lugtu', 'charlene.lugtu@example.com', '2', 'A', '2004-08-12', 'Secretary', 'lugtu.jpg'),
+('Lawrence', 'Baluyut', 'lawrence.baluyut@example.com', '3', 'A', '2003-02-28', 'Treasurer', 'baluyut.jpg'),
+('Kim', 'Sena', 'kim.sena@example.com', '4', 'A', '2002-03-10', 'Auditor', 'sena.jpg'),
+('Sophia', 'Hernandez', 'sophia.hernandez8@example.com', '4', 'D', '2000-04-25', 'President', 'sample.jpg'),
+('Sean', 'Magcalas', 'sean.magcalas@example.com', '3', 'A', '2002-09-15', 'Public Information Officer', 'magcalas.jpg'),
+('Angelo', 'Mesia', 'angelo.mesia@example.com', '4', 'a', '2002-06-18', 'Public Relations Officer', 'sample.jpg'),
+('John Arnie', 'Mallari', 'johnarnie.mallari@example.com', '4', 'a', '2002-05-05', 'Business Manager', 'sample.jpg'),
+('Uzrhein', 'Reyes', 'uzrhein.reyes@example.com', '4', 'A', '2002-07-07', 'Creative Director', 'ureyes.jpg'),
+('Joe Pete', 'Briola', 'joepete.briola@example.com', '3', 'A', '2003-10-20', 'Assistant Business Manager', 'briola.jpg'),
+('Joaquin', 'Panililio', 'joaquin.panililio@example.com', '1', 'C', '2005-12-12', '1st Year Student Development Coordinator', 'panililio.jpg'),
+('Jan Andrei', 'Teresa', 'janandrei.teresa@example.com', '1', 'A', '2005-01-22', '1st Year Student Development Coordinator', 'teresa.jpg'),
+('Glenn', 'Peña', 'glenn.peña@example.com', '2', 'A', '2005-11-03', '2nd Year Student Development Coordinator', 'pena.jpg'),
+('Theanna', 'Alejos', 'theanna.alejos@example.com', '2', 'A', '2005-03-15', '2nd Year Student Development Coordinator', 'alejos.jpg'),
+('Kim', 'Manaloto', 'kim.manaloto@example.com', '3', 'A', '2003-09-25', '3rd Year Student Development Coordinator', 'sample.jpg'),
+('Justine', 'Enriquez', 'justine.enriquez@example.com', '3', 'A', '2003-02-08', '3rd Year Student Development Coordinator', 'sample.jpg'),
+('Jewel', 'Ocampo', 'jewel.ocampo@example.com', '4', 'A', '2002-08-14', '4th Year Student Development Coordinator', 'sample.jpg');
+('Miguel', 'Carlos', 'miguel.carlos@example.com', '4', 'A', '2002-08-14', '4th Year Student Development Coordinator', 'carlos.jpg');
+
+
+INSERT INTO employees (firstName, lastName, email, position, imageName) VALUES
+('Joey', 'Suba', 'joey.suba@example.com', 'Dean', 'suba.jpg'),
+('Jemina', 'Crisostomo', 'jemina.crisostomo@example.com', 'Secretary', 'crisostomo.jpg'),
+('Grace', 'Tiqui', 'grace.tiqui@example.com', 'Teacher', 'sample.jpg'),
+('Grace', 'Sadac', 'grace.sadac@example.com', 'Faculty', 'sadac.jpg'),
+('Maribeth', 'Rivera', 'maribeth.rivera@example.com', 'Teacher', 'rivera.jpg'),
+('Mark Anthony', 'Madalipay', 'markanthony.madalipay@example.com', 'Teacher', 'madalipay.jpg'),
+('Carina', 'Dizon', 'carina.dizon@example.com', 'Faculty', 'dizon.jpg'),
+('Evelyn', 'Villanueva', 'evelyn.villanueva@example.com', 'Faculty', 'sample.jpg'),
+('Stephen', 'Sembrano', 'stephen.sembrano@example.com', 'Teacher', 'sembrano.jpg'),
+('Robert', 'Velasco', 'robert.velasco@example.com', 'Teacher', 'velasco.jpg'),
+('Romenick', 'Garcia', '@example.com', 'Teacher', 'sample.jpg'),
+('Glenn', 'Zuniega', 'glenn.zuniega@example.com', 'Faculty', 'sample.jpg'),
+('Yanina', 'Manalo', 'yanina.manalo@example.com', 'Faculty', 'sample.jpg'),
+('John Ivee', 'Hernandez', 'john.ivee@example.com', 'Teacher', 'hernandez.jpg');

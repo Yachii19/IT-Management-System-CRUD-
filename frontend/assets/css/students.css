@@ -1,0 +1,128 @@
+/* Table Start */
+.main-content {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 200px;
+    min-height: 80dvh;
+}
+
+.title-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px 20px 0px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(219, 100%, 20%);
+}
+
+.add-student-btn {
+    background-color: #0d47a1;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-student-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    background-color: #003B99; 
+}
+
+.table-container {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 0.5px rgba(87, 87, 87, 0.881);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-header,
+.table-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 2fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.table-header {
+    background-color: #002366;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 20px 25px;
+}
+
+.table-content {
+    border-bottom: 1px solid rgba(87, 87, 87, 0.881);
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+}
+
+.table-container :last-child {
+    border: none;
+}
+
+.table-content > p {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.table-content > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.update-container:hover {
+    background-color: #0043af;
+    transform: scale(1.15);
+}
+
+
+.delete-container:hover {
+    background-color: #b71c1c;
+    transform: scale(1.15);
+}
+
+.table-content > div  img {
+    width: 25px;
+    height: 25px;
+}
+
+.no-student-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-student-warning > img {
+    width: 25px;
+    height: 25px;
+}
+
+.no-student-warning > p{
+    padding: 20px 5px;
+}
+/* Table Ends */
+
+
+
+
